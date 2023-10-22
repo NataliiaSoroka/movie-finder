@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lintfix": "prettier --write --list-different . && npm run lint:js --fix"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.6",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@pinia/nuxt": "^0.5.1",
+    "@typescript-eslint/parser": "^6.7.5",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "nuxt": "^3.7.4",
+    "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.3",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.2.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.19"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "element-plus": "^2.4.0",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "pinia": "^2.1.7"
+  }
+}
