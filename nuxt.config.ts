@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: process.env.NODE_ENV !== "production",
   app: {
-    baseUrl: process.env.NODE_ENV === "production" ? "/movie-finder/" : "/",
+    baseURL: process.env.NODE_ENV === "production" ? "/movie-finder/" : "/",
     head: {
       title: "Movie Finder",
       meta: [
