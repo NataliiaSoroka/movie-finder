@@ -1,5 +1,9 @@
 # Movie Finder
 
+## Result
+
+https://nataliiasoroka.github.io/movie-finder/
+
 ## Setup
 
 Create .env file with following keys

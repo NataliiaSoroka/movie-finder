@@ -1,23 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  router: {
-    base: process.env.NODE_ENV === "production" ? "/movie-finder/" : "/",
-  },
-  // build: {
-  //   publicPath:
-  //     process.env.NODE_ENV === "production"
-  //       ? "/movie-finder/_nuxt/"
-  //       : "/_nuxt/",
-  // },
-  vite: {
-    build: {
-      assetsDir:
-        process.env.NODE_ENV === "production"
-          ? "/movie-finder/_nuxt/"
-          : "/_nuxt/",
-    },
-  },
+  ssr: process.env.NODE_ENV !== "production",
   app: {
+    baseUrl: process.env.NODE_ENV === "production" ? "/movie-finder/" : "/",
     head: {
       title: "Movie Finder",
       meta: [
