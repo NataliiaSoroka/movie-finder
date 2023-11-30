@@ -20,7 +20,7 @@ import { useMovieStore } from "@/stores/movies";
 
 export default defineComponent({
   setup() {
-    console.log(process.env.NUXT_PUBLIC_BASE_URL);
+    console.log(process.env);
 
     const store = useMovieStore();
     const { searchMovies } = storeToRefs(store);
