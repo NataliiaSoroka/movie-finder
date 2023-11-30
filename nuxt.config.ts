@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+console.log(process.env.NUXT_PUBLIC_BASE_URL);
+
 export default defineNuxtConfig({
   ssr: process.env.NODE_ENV !== "production",
   app: {
