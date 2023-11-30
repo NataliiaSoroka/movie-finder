@@ -65,8 +65,10 @@ jobs:
       - name: Setting the environment variables
         run: |
           echo "NUXT_PUBLIC_BASE_URL=$NUXT_PUBLIC_BASE_URL" >> $GITHUB_ENV
+          echo "NUXT_PUBLIC_API_KEY=$NUXT_PUBLIC_API_KEY" >> $GITHUB_ENV
         env:
           NUXT_PUBLIC_BASE_URL: ${{ env.NUXT_PUBLIC_BASE_URL }}
+          NUXT_PUBLIC_API_KEY: ${{ secrets.NUXT_PUBLIC_API_KEY }}
       - name: Static HTML export with Nuxt
         # env:
         #   NUXT_PUBLIC_BASE_URL: ${{ env.NUXT_PUBLIC_BASE_URL }}
